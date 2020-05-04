@@ -91,7 +91,7 @@ pipeline {
 stage ('deploy'){
    steps {
 	script {
-      bat ''' D:\\Laptop\\Software\\curl-7.68.0-win64-mingw\\bin\\curl http://localhost:8081/repository/testproject/com/javatpoint/Cube/7/Cube-7.war -o D:\\Laptop\\Software\\Tomcat\\apache-tomcat-8.5.51\\webapps\\testproject.war'''
+      bat ''' D:\\Laptop\\Software\\curl-7.68.0-win64-mingw\\bin\\curl http://localhost:8081/repository/testproject/com/javatpoint/CubeGeneratorWeb/12/CubeGeneratorWeb-12.war -o D:\\Laptop\\Software\\Tomcat\\apache-tomcat-8.5.51\\webapps\\testproject.war'''
 	}
 	}
 	}
