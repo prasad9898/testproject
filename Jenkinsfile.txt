@@ -88,14 +88,12 @@ pipeline {
                 }
             }
         }
-
-
-//stage ('deploy'){
-  // steps {
-//	script {
-  //     bat ''' D:\Laptop\Software\curl-7.68.0-win64-mingw\bin\curl http://localhost:8081/repository/mymaven1/com/javatpoint/CubeGeneratorWeb/1/CubeGeneratorWeb-1.war -o D:\Laptop\Software\Tomcat\apache-tomcat-8.5.51\webapps\\CubeGeneratorWeb-1.war'''
-//	}
-//	}
-//	}
+stage ('deploy'){
+   steps {
+	script {
+      bat ''' D:\Laptop\Software\curl-7.68.0-win64-mingw\bin\curl http://localhost:8081/repository/mymaven1/com/javatpoint/Cube/7/Cube-7.war -o D:\Laptop\Software\Tomcat\apache-tomcat-8.5.51\webapps\\testproject.war'''
+	}
+	}
+	}
     }
 }
